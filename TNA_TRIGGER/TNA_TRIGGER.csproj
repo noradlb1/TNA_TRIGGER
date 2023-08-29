@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4C24F864-21B1-4862-B35D-FC203FFC6C5D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TNA_TRIGGER</RootNamespace>
+    <AssemblyName>TNA_TRIGGER</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60DC8134-EBA5-43B8-BCC9-BB4BC16C2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>TNA_TRIGGER.ico</ApplicationIcon>
+    <StartupObject>ValorantAimbotUI.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="014705C02E370DD3" />
+    <Reference Include="DiscordRPC">
+      <HintPath>..\..\Full_TRIGGER\DiscordRPC.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\Full_TRIGGER\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="ToggleSwitch">
+      <HintPath>..\..\Full_TRIGGER\ToggleSwitch.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsInput">
+      <HintPath>..\..\Full_TRIGGER\WindowsInput.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-Module-.cs" />
+    <Compile Include="Aimbot\aimbot.cs" />
+    <Compile Include="Class0.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Class38.cs" />
+    <Compile Include="Class39.cs" />
+    <Compile Include="Class4.cs" />
+    <Compile Include="Delegate0.cs" />
+    <Compile Include="Delegate1.cs" />
+    <Compile Include="Delegate10.cs" />
+    <Compile Include="Delegate100.cs" />
+    <Compile Include="Delegate101.cs" />
+    <Compile Include="Delegate102.cs" />
+    <Compile Include="Delegate103.cs" />
+    <Compile Include="Delegate104.cs" />
+    <Compile Include="Delegate105.cs" />
+    <Compile Include="Delegate106.cs" />
+    <Compile Include="Delegate107.cs" />
+    <Compile Include="Delegate108.cs" />
+    <Compile Include="Delegate109.cs" />
+    <Compile Include="Delegate11.cs" />
+    <Compile Include="Delegate110.cs" />
+    <Compile Include="Delegate111.cs" />
+    <Compile Include="Delegate112.cs" />
+    <Compile Include="Delegate113.cs" />
+    <Compile Include="Delegate114.cs" />
+    <Compile Include="Delegate115.cs" />
+    <Compile Include="Delegate116.cs" />
+    <Compile Include="Delegate117.cs" />
+    <Compile Include="Delegate118.cs" />
+    <Compile Include="Delegate119.cs" />
+    <Compile Include="Delegate12.cs" />
+    <Compile Include="Delegate120.cs" />
+    <Compile Include="Delegate121.cs" />
+    <Compile Include="Delegate122.cs" />
+    <Compile Include="Delegate123.cs" />
+    <Compile Include="Delegate124.cs" />
+    <Compile Include="Delegate125.cs" />
+    <Compile Include="Delegate126.cs" />
+    <Compile Include="Delegate127.cs" />
+    <Compile Include="Delegate128.cs" />
+    <Compile Include="Delegate129.cs" />
+    <Compile Include="Delegate13.cs" />
+    <Compile Include="Delegate130.cs" />
+    <Compile Include="Delegate131.cs" />
+    <Compile Include="Delegate132.cs" />
+    <Compile Include="Delegate133.cs" />
+    <Compile Include="Delegate134.cs" />
+    <Compile Include="Delegate135.cs" />
+    <Compile Include="Delegate136.cs" />
+    <Compile Include="Delegate137.cs" />
+    <Compile Include="Delegate138.cs" />
+    <Compile Include="Delegate139.cs" />
+    <Compile Include="Delegate14.cs" />
+    <Compile Include="Delegate140.cs" />
+    <Compile Include="Delegate141.cs" />
+    <Compile Include="Delegate142.cs" />
+    <Compile Include="Delegate143.cs" />
+    <Compile Include="Delegate144.cs" />
+    <Compile Include="Delegate145.cs" />
+    <Compile Include="Delegate146.cs" />
+    <Compile Include="Delegate147.cs" />
+    <Compile Include="Delegate148.cs" />
+    <Compile Include="Delegate149.cs" />
+    <Compile Include="Delegate15.cs" />
+    <Compile Include="Delegate150.cs" />
+    <Compile Include="Delegate151.cs" />
+    <Compile Include="Delegate152.cs" />
+    <Compile Include="Delegate153.cs" />
+    <Compile Include="Delegate154.cs" />
+    <Compile Include="Delegate155.cs" />
+    <Compile Include="Delegate156.cs" />
+    <Compile Include="Delegate157.cs" />
+    <Compile Include="Delegate158.cs" />
+    <Compile Include="Delegate159.cs" />
+    <Compile Include="Delegate16.cs" />
+    <Compile Include="Delegate160.cs" />
+    <Compile Include="Delegate161.cs" />
+    <Compile Include="Delegate162.cs" />
+    <Compile Include="Delegate163.cs" />
+    <Compile Include="Delegate164.cs" />
+    <Compile Include="Delegate165.cs" />
+    <Compile Include="Delegate166.cs" />
+    <Compile Include="Delegate167.cs" />
+    <Compile Include="Delegate168.cs" />
+    <Compile Include="Delegate169.cs" />
+    <Compile Include="Delegate17.cs" />
+    <Compile Include="Delegate170.cs" />
+    <Compile Include="Delegate171.cs" />
+    <Compile Include="Delegate172.cs" />
+    <Compile Include="Delegate173.cs" />
+    <Compile Include="Delegate174.cs" />
+    <Compile Include="Delegate175.cs" />
+    <Compile Include="Delegate176.cs" />
+    <Compile Include="Delegate177.cs" />
+    <Compile Include="Delegate178.cs" />
+    <Compile Include="Delegate179.cs" />
+    <Compile Include="Delegate18.cs" />
+    <Compile Include="Delegate180.cs" />
+    <Compile Include="Delegate181.cs" />
+    <Compile Include="Delegate182.cs" />
+    <Compile Include="Delegate183.cs" />
+    <Compile Include="Delegate184.cs" />
+    <Compile Include="Delegate185.cs" />
+    <Compile Include="Delegate186.cs" />
+    <Compile Include="Delegate187.cs" />
+    <Compile Include="Delegate188.cs" />
+    <Compile Include="Delegate189.cs" />
+    <Compile Include="Delegate19.cs" />
+    <Compile Include="Delegate190.cs" />
+    <Compile Include="Delegate191.cs" />
+    <Compile Include="Delegate192.cs" />
+    <Compile Include="Delegate193.cs" />
+    <Compile Include="Delegate194.cs" />
+    <Compile Include="Delegate195.cs" />
+    <Compile Include="Delegate196.cs" />
+    <Compile Include="Delegate197.cs" />
+    <Compile Include="Delegate198.cs" />
+    <Compile Include="Delegate199.cs" />
+    <Compile Include="Delegate2.cs" />
+    <Compile Include="Delegate20.cs" />
+    <Compile Include="Delegate200.cs" />
+    <Compile Include="Delegate201.cs" />
+    <Compile Include="Delegate202.cs" />
+    <Compile Include="Delegate203.cs" />
+    <Compile Include="Delegate204.cs" />
+    <Compile Include="Delegate205.cs" />
+    <Compile Include="Delegate206.cs" />
+    <Compile Include="Delegate207.cs" />
+    <Compile Include="Delegate208.cs" />
+    <Compile Include="Delegate209.cs" />
+    <Compile Include="Delegate21.cs" />
+    <Compile Include="Delegate210.cs" />
+    <Compile Include="Delegate211.cs" />
+    <Compile Include="Delegate212.cs" />
+    <Compile Include="Delegate213.cs" />
+    <Compile Include="Delegate214.cs" />
+    <Compile Include="Delegate215.cs" />
+    <Compile Include="Delegate216.cs" />
+    <Compile Include="Delegate217.cs" />
+    <Compile Include="Delegate218.cs" />
+    <Compile Include="Delegate219.cs" />
+    <Compile Include="Delegate22.cs" />
+    <Compile Include="Delegate220.cs" />
+    <Compile Include="Delegate221.cs" />
+    <Compile Include="Delegate222.cs" />
+    <Compile Include="Delegate223.cs" />
+    <Compile Include="Delegate224.cs" />
+    <Compile Include="Delegate225.cs" />
+    <Compile Include="Delegate226.cs" />
+    <Compile Include="Delegate227.cs" />
+    <Compile Include="Delegate228.cs" />
+    <Compile Include="Delegate229.cs" />
+    <Compile Include="Delegate23.cs" />
+    <Compile Include="Delegate230.cs" />
+    <Compile Include="Delegate231.cs" />
+    <Compile Include="Delegate232.cs" />
+    <Compile Include="Delegate233.cs" />
+    <Compile Include="Delegate234.cs" />
+    <Compile Include="Delegate235.cs" />
+    <Compile Include="Delegate236.cs" />
+    <Compile Include="Delegate237.cs" />
+    <Compile Include="Delegate238.cs" />
+    <Compile Include="Delegate239.cs" />
+    <Compile Include="Delegate24.cs" />
+    <Compile Include="Delegate240.cs" />
+    <Compile Include="Delegate241.cs" />
+    <Compile Include="Delegate242.cs" />
+    <Compile Include="Delegate243.cs" />
+    <Compile Include="Delegate244.cs" />
+    <Compile Include="Delegate245.cs" />
+    <Compile Include="Delegate246.cs" />
+    <Compile Include="Delegate247.cs" />
+    <Compile Include="Delegate248.cs" />
+    <Compile Include="Delegate249.cs" />
+    <Compile Include="Delegate25.cs" />
+    <Compile Include="Delegate250.cs" />
+    <Compile Include="Delegate251.cs" />
+    <Compile Include="Delegate252.cs" />
+    <Compile Include="Delegate253.cs" />
+    <Compile Include="Delegate254.cs" />
+    <Compile Include="Delegate255.cs" />
+    <Compile Include="Delegate256.cs" />
+    <Compile Include="Delegate257.cs" />
+    <Compile Include="Delegate258.cs" />
+    <Compile Include="Delegate259.cs" />
+    <Compile Include="Delegate26.cs" />
+    <Compile Include="Delegate260.cs" />
+    <Compile Include="Delegate261.cs" />
+    <Compile Include="Delegate262.cs" />
+    <Compile Include="Delegate263.cs" />
+    <Compile Include="Delegate264.cs" />
+    <Compile Include="Delegate265.cs" />
+    <Compile Include="Delegate266.cs" />
+    <Compile Include="Delegate267.cs" />
+    <Compile Include="Delegate268.cs" />
+    <Compile Include="Delegate269.cs" />
+    <Compile Include="Delegate27.cs" />
+    <Compile Include="Delegate270.cs" />
+    <Compile Include="Delegate271.cs" />
+    <Compile Include="Delegate272.cs" />
+    <Compile Include="Delegate273.cs" />
+    <Compile Include="Delegate274.cs" />
+    <Compile Include="Delegate275.cs" />
+    <Compile Include="Delegate276.cs" />
+    <Compile Include="Delegate277.cs" />
+    <Compile Include="Delegate278.cs" />
+    <Compile Include="Delegate279.cs" />
+    <Compile Include="Delegate28.cs" />
+    <Compile Include="Delegate280.cs" />
+    <Compile Include="Delegate281.cs" />
+    <Compile Include="Delegate282.cs" />
+    <Compile Include="Delegate283.cs" />
+    <Compile Include="Delegate284.cs" />
+    <Compile Include="Delegate285.cs" />
+    <Compile Include="Delegate286.cs" />
+    <Compile Include="Delegate287.cs" />
+    <Compile Include="Delegate288.cs" />
+    <Compile Include="Delegate289.cs" />
+    <Compile Include="Delegate29.cs" />
+    <Compile Include="Delegate290.cs" />
+    <Compile Include="Delegate291.cs" />
+    <Compile Include="Delegate292.cs" />
+    <Compile Include="Delegate293.cs" />
+    <Compile Include="Delegate294.cs" />
+    <Compile Include="Delegate295.cs" />
+    <Compile Include="Delegate296.cs" />
+    <Compile Include="Delegate297.cs" />
+    <Compile Include="Delegate298.cs" />
+    <Compile Include="Delegate299.cs" />
+    <Compile Include="Delegate3.cs" />
+    <Compile Include="Delegate30.cs" />
+    <Compile Include="Delegate300.cs" />
+    <Compile Include="Delegate301.cs" />
+    <Compile Include="Delegate302.cs" />
+    <Compile Include="Delegate303.cs" />
+    <Compile Include="Delegate304.cs" />
+    <Compile Include="Delegate305.cs" />
+    <Compile Include="Delegate306.cs" />
+    <Compile Include="Delegate307.cs" />
+    <Compile Include="Delegate308.cs" />
+    <Compile Include="Delegate309.cs" />
+    <Compile Include="Delegate31.cs" />
+    <Compile Include="Delegate310.cs" />
+    <Compile Include="Delegate311.cs" />
+    <Compile Include="Delegate312.cs" />
+    <Compile Include="Delegate313.cs" />
+    <Compile Include="Delegate314.cs" />
+    <Compile Include="Delegate315.cs" />
+    <Compile Include="Delegate316.cs" />
+    <Compile Include="Delegate317.cs" />
+    <Compile Include="Delegate318.cs" />
+    <Compile Include="Delegate319.cs" />
+    <Compile Include="Delegate32.cs" />
+    <Compile Include="Delegate320.cs" />
+    <Compile Include="Delegate321.cs" />
+    <Compile Include="Delegate322.cs" />
+    <Compile Include="Delegate323.cs" />
+    <Compile Include="Delegate324.cs" />
+    <Compile Include="Delegate325.cs" />
+    <Compile Include="Delegate326.cs" />
+    <Compile Include="Delegate327.cs" />
+    <Compile Include="Delegate328.cs" />
+    <Compile Include="Delegate329.cs" />
+    <Compile Include="Delegate33.cs" />
+    <Compile Include="Delegate330.cs" />
+    <Compile Include="Delegate331.cs" />
+    <Compile Include="Delegate332.cs" />
+    <Compile Include="Delegate333.cs" />
+    <Compile Include="Delegate334.cs" />
+    <Compile Include="Delegate335.cs" />
+    <Compile Include="Delegate336.cs" />
+    <Compile Include="Delegate337.cs" />
+    <Compile Include="Delegate338.cs" />
+    <Compile Include="Delegate339.cs" />
+    <Compile Include="Delegate34.cs" />
+    <Compile Include="Delegate340.cs" />
+    <Compile Include="Delegate341.cs" />
+    <Compile Include="Delegate342.cs" />
+    <Compile Include="Delegate343.cs" />
+    <Compile Include="Delegate344.cs" />
+    <Compile Include="Delegate345.cs" />
+    <Compile Include="Delegate346.cs" />
+    <Compile Include="Delegate347.cs" />
+    <Compile Include="Delegate348.cs" />
+    <Compile Include="Delegate349.cs" />
+    <Compile Include="Delegate35.cs" />
+    <Compile Include="Delegate350.cs" />
+    <Compile Include="Delegate351.cs" />
+    <Compile Include="Delegate352.cs" />
+    <Compile Include="Delegate353.cs" />
+    <Compile Include="Delegate354.cs" />
+    <Compile Include="Delegate355.cs" />
+    <Compile Include="Delegate356.cs" />
+    <Compile Include="Delegate357.cs" />
+    <Compile Include="Delegate36.cs" />
+    <Compile Include="Delegate37.cs" />
+    <Compile Include="Delegate38.cs" />
+    <Compile Include="Delegate39.cs" />
+    <Compile Include="Delegate4.cs" />
+    <Compile Include="Delegate40.cs" />
+    <Compile Include="Delegate41.cs" />
+    <Compile Include="Delegate42.cs" />
+    <Compile Include="Delegate43.cs" />
+    <Compile Include="Delegate44.cs" />
+    <Compile Include="Delegate45.cs" />
+    <Compile Include="Delegate46.cs" />
+    <Compile Include="Delegate47.cs" />
+    <Compile Include="Delegate48.cs" />
+    <Compile Include="Delegate49.cs" />
+    <Compile Include="Delegate5.cs" />
+    <Compile Include="Delegate50.cs" />
+    <Compile Include="Delegate51.cs" />
+    <Compile Include="Delegate52.cs" />
+    <Compile Include="Delegate53.cs" />
+    <Compile Include="Delegate54.cs" />
+    <Compile Include="Delegate55.cs" />
+    <Compile Include="Delegate56.cs" />
+    <Compile Include="Delegate57.cs" />
+    <Compile Include="Delegate58.cs" />
+    <Compile Include="Delegate59.cs" />
+    <Compile Include="Delegate6.cs" />
+    <Compile Include="Delegate60.cs" />
+    <Compile Include="Delegate61.cs" />
+    <Compile Include="Delegate62.cs" />
+    <Compile Include="Delegate63.cs" />
+    <Compile Include="Delegate64.cs" />
+    <Compile Include="Delegate65.cs" />
+    <Compile Include="Delegate66.cs" />
+    <Compile Include="Delegate67.cs" />
+    <Compile Include="Delegate68.cs" />
+    <Compile Include="Delegate69.cs" />
+    <Compile Include="Delegate7.cs" />
+    <Compile Include="Delegate70.cs" />
+    <Compile Include="Delegate71.cs" />
+    <Compile Include="Delegate72.cs" />
+    <Compile Include="Delegate73.cs" />
+    <Compile Include="Delegate74.cs" />
+    <Compile Include="Delegate75.cs" />
+    <Compile Include="Delegate76.cs" />
+    <Compile Include="Delegate77.cs" />
+    <Compile Include="Delegate78.cs" />
+    <Compile Include="Delegate79.cs" />
+    <Compile Include="Delegate8.cs" />
+    <Compile Include="Delegate80.cs" />
+    <Compile Include="Delegate81.cs" />
+    <Compile Include="Delegate82.cs" />
+    <Compile Include="Delegate83.cs" />
+    <Compile Include="Delegate84.cs" />
+    <Compile Include="Delegate85.cs" />
+    <Compile Include="Delegate86.cs" />
+    <Compile Include="Delegate87.cs" />
+    <Compile Include="Delegate88.cs" />
+    <Compile Include="Delegate89.cs" />
+    <Compile Include="Delegate9.cs" />
+    <Compile Include="Delegate90.cs" />
+    <Compile Include="Delegate91.cs" />
+    <Compile Include="Delegate92.cs" />
+    <Compile Include="Delegate93.cs" />
+    <Compile Include="Delegate94.cs" />
+    <Compile Include="Delegate95.cs" />
+    <Compile Include="Delegate96.cs" />
+    <Compile Include="Delegate97.cs" />
+    <Compile Include="Delegate98.cs" />
+    <Compile Include="Delegate99.cs" />
+    <Compile Include="FreeVer\Free.cs" />
+    <Compile Include="GClass0.cs" />
+    <Compile Include="GClass1.cs" />
+    <Compile Include="GClass10.cs" />
+    <Compile Include="GClass11.cs" />
+    <Compile Include="GClass12.cs" />
+    <Compile Include="GClass16.cs" />
+    <Compile Include="GClass17.cs" />
+    <Compile Include="GClass18.cs" />
+    <Compile Include="GClass2.cs" />
+    <Compile Include="GClass3.cs" />
+    <Compile Include="GClass4.cs" />
+    <Compile Include="GClass5.cs" />
+    <Compile Include="GClass6.cs" />
+    <Compile Include="GClass7.cs" />
+    <Compile Include="GClass8.cs" />
+    <Compile Include="GClass9.cs" />
+    <Compile Include="GEnum0.cs" />
+    <Compile Include="GEnum1.cs" />
+    <Compile Include="KeyAuth\api.cs" />
+    <Compile Include="KeyAuth\encryption.cs" />
+    <Compile Include="KeyAuth\json_wrapper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Struct0.cs" />
+    <Compile Include="Struct1.cs" />
+    <Compile Include="Struct4.cs" />
+    <Compile Include="Struct5.cs" />
+    <Compile Include="ValorantAimbotUI\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ValorantAimbotUI\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ValorantAimbotUI\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ValorantAimbotUI\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ValorantAimbotUI\Program.cs" />
+    <Compile Include="ValorantAimbotUI\Properties\Resources.cs" />
+    <Compile Include="ValorantAimbotUI\Properties\Settings.cs" />
+    <Compile Include="ValorantAimbotUI\Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="ValorantAimbotUI\Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
